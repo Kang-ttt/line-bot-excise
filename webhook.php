@@ -5,7 +5,7 @@ $channelAccessToken = 'L0zGOVqhpWYTPpA/QmFHUtRwc7Xsnk0m0y12XxzCy/RBcUne6YwLG/XaW
 $request = file_get_contents('php://input');   // Get request content
 
 $request_json = json_decode($request, true);   // Decode JSON request
-L0zGOVqhpWYTPpA/QmFHUtRwc7Xsnk0m0y12XxzCy/RBcUne6YwLG/XaWm+/PH9L5eHGnMgz+NkbYj8nPbCpKveLq8fKuPBIgoUXfOiRTtKBNAxTyS82EpW6X4wfsSywKj3UhFFX5dmSLiHiEfqCQgdB04t89/1O/w1cDnyilFU=
+
 foreach ($request_json['events'] as $event)
 {
 	if ($event['type'] == 'message') 
@@ -14,7 +14,7 @@ foreach ($request_json['events'] as $event)
 		{
 			$text = $event['message']['text'];
 			
-			if(($text == "รถแบบผมเข้าพิกัดเสียภาษีหรือไหมครับ") || ($text == "รถแบบนี้เข้าพิกัดเสียภาษีหรือไหมครับ") ){
+			if(($text == "รถแบบผมเข้าพิกัดเสียภาษีหรือไหมครับ?") || ($text == "รถแบบนี้เข้าพิกัดเสียภาษีหรือไหมครับ?") ){
 				$number = rand(0,1);
 				if($number == 0){
 					$reply_message = 'อยู่พิกัดการเสียภาษี (ผลิต/ดัดแปลงสภาพรถยนต์หรือยานพาหนะ)'; 
