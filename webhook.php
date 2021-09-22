@@ -1,11 +1,11 @@
 <?php
 
-$channelAccessToken = '/XP96K+DoalewwHBQ7tZqRnxyvkwjRYo6WXO1g2hNee+PkUbl6TRIYzEmPC2ddALuZ72gsteX96a2dNkFZliM+v8p5Ud2isyQf8GHYAYWNoQGaSmDLdlmhmmMbeCCytxBr9PkY5IzjevJ/hgeyYWsgdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
+$channelAccessToken = 'L0zGOVqhpWYTPpA/QmFHUtRwc7Xsnk0m0y12XxzCy/RBcUne6YwLG/XaWm+/PH9L5eHGnMgz+NkbYj8nPbCpKveLq8fKuPBIgoUXfOiRTtKBNAxTyS82EpW6X4wfsSywKj3UhFFX5dmSLiHiEfqCQgdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
 
 $request = file_get_contents('php://input');   // Get request content
 
 $request_json = json_decode($request, true);   // Decode JSON request
-
+L0zGOVqhpWYTPpA/QmFHUtRwc7Xsnk0m0y12XxzCy/RBcUne6YwLG/XaWm+/PH9L5eHGnMgz+NkbYj8nPbCpKveLq8fKuPBIgoUXfOiRTtKBNAxTyS82EpW6X4wfsSywKj3UhFFX5dmSLiHiEfqCQgdB04t89/1O/w1cDnyilFU=
 foreach ($request_json['events'] as $event)
 {
 	if ($event['type'] == 'message') 
